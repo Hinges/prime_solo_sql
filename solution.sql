@@ -54,7 +54,7 @@ WHERE is_stocked = 'f';
 
 --QUESTION 9
 
-SELECT T FROM books JOIN editions 
+SELECT title FROM books JOIN editions 
 ON books.id = editions.book_id
 JOIN stock
 ON editions.isbn= stock.isbn
